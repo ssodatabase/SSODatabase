@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>SSO Database </title>
-  </head>
-  <body>
+<html>
+<head>
+<title>SSO Database </title>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-   <p>Hello Caroline</p>
-   <p>Once I have learnt to code, I promise to build this website for you :) </p>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-   <img src="Sooty.png" />
-   <img src="Sweepy.png" />
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
 
-  </body>
+<h2>Hello Caroline</h2>
+<p>Once I have learnt to code, I promise to build this website for you :)</p>
+
+<div class="row">
+  <div class="column">
+    <img src="Sooty.png" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Sweepy.png" style="width:100%">
+  </div>
+</div>
+
+</body>
 </html>
